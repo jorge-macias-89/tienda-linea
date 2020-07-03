@@ -1,6 +1,5 @@
 <!doctype html>
-<html>
-
+<html lang="es">
 
 <head>
 <meta charset="UTF-8">
@@ -29,6 +28,13 @@
 	
 	
 <body>
+	<div id="elementoparareact"></div>
+<script src="https://unpkg.com/react@15.4.2/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15.4.2/dist/react-dom.js"></script>
+<script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+<script type="text/babel">
+var vista =
+<div>
 	<br>	<br>	<br>	<br>	<br>
   <img src="assets/banners1.jpg" alt="bannercarrusel" width="100%" height="100%" class="carruselImagen">
 </div>
@@ -93,7 +99,10 @@ Performance-Train II
 	<ul>
 	Todos los derechos reservados: Jorge Macías <a href = "mailto: jorge.macias.design@gmail.com">Contactame</a>
 	</ul>
-	
+</div>;
+var elemento = document.getElementById('elementoparareact');
+ReactDOM.render(vista, elemento);
+
 </footer>	
 </body>
 	
